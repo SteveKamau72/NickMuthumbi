@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purple"
+    tools:context="com.softtech.stevekamau.nickmuthumbi.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <requestFocus />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/semi_transparent" />
+
+            <LinearLayout
+                android:id="@+id/editText1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center_vertical"
+                android:paddingRight="0dip">
+
+                <!--
+                    TextView label goes at the left.
+                -->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/person"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff" />
+                <!--
+                    EditText goes in between.
+                -->
+                <EditText
+                    android:id="@+id/ed1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editText2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/custom_edit_text"
+                android:gravity="center_vertical"
+                android:paddingRight="0dip">
+
+                <!--
+                    TextView label goes at the left.
+                -->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/phone"
+                    android:textAppearance="?android:attr/textAppearanceLargeInverse" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="#fff" />
+                <!--
+                    EditText goes in between.
+                -->
+                <EditText
+                    android:id="@+id/ed2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Phone (07...)"
+                    android:maxLength="10"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColorHint="#fff" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@color/btn_register"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="25dp">
+
+            </Button>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

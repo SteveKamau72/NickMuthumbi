@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd7d7d7"
+    tools:context="com.softtech.stevekamau.nickmuthumbi.Details">
+
+    <RelativeLayout
+        android:id="@+id/safaricom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:paddingBottom="50dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:paddingTop="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/safaricom" />
+
+        <ImageView
+            android:id="@+id/saf_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/linear_layout_clicked"
+            android:clickable="true"
+            android:src="@drawable/back_dark" />
+
+        <ImageView
+            android:id="@+id/saf_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/linear_layout_clicked"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/saf_share" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/airtel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/airtel" />
+
+        <ImageView
+            android:id="@+id/air_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/linear_layout_clicked"
+            android:clickable="true"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/air_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/linear_layout_clicked"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/air_share" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/safaricom"
+        android:layout_margin="7dp"
+        android:background="@drawable/bg_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Data Plan"
+            android:textColor="#a4172f13"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#a4172f13">
+
+        </View>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="4GB"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="KSHs."
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Desscr"
+            android:background="@drawable/blue_rectangle"
+            android:padding="5dp"
+            android:textColor="#ffffffff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/reserve"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btn_selector_yellow"
+        android:textAllCaps="false"
+        android:text="Reserve Bundle">l
+
+    </Button>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Nick</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_airtel">Airtel</string>
+    <string name="title_activity_safaricom">Safaricom</string>
+    <string name="title_activity_blog_view">BlogView</string>
+    <string name="title_activity_android_tips">AndroidTips</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+    <string name="title_activity_settings_screen">SettingsScreen</string>
+    <string name="title_activity_feed">FeedActivity</string>
+</resources>
